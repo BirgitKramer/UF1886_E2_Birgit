@@ -35,3 +35,23 @@ TotalVisibleMemorySize FreePhysicalMemory
               16507816            6841180
 
 ```
+### Arquitectura logica
+#### comando
+```
+docker port odoo.18
+
+8069/tcp -> 0.0.0.0:8001
+8069/tcp -> [::]:8001
+8072/tcp -> 0.0.0.0:8002
+8072/tcp -> [::]:8002
+
+docker port postgres.db
+
+5432/tcp -> 0.0.0.0:5432
+5432/tcp -> [::]:5432`
+```
+
+### Confirmar Apache Hop está en el host
+``` 
+hop-conf.bat -v
+```
