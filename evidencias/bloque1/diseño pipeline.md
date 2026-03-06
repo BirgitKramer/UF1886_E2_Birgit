@@ -163,7 +163,7 @@ SELECT id, name, partner_id, date_order, amount_total, state FROM sale_order LIM
   7 | S00007 |         11 | 2026-03-05 13:13:43        |      1706.00 | sale
   9 | S00009 |         11 | 2026-02-26 13:13:43.712546 |       654.00 | sale
 (10 rows)
-```
+```git add
 
 ```
 SELECT id, order_id, product_id, name, product_uom_qty, price_unit, price_subtotal FROM sale_order_line LIMIT 10;
@@ -183,6 +183,19 @@ id | order_id | product_id |                       name                        |
  41 |       19 |          6 | [FURN_8888] Lámpara de oficina                    |            5.00 |     145.00 |         725.00
 (10 rows)
 
+```
+```
+- Dar permisos
+```
+GRANT ALL PRIVILEGES ON SCHEMA staging TO "user";
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA staging TO "user";
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA staging TO "user";
+```
+- Verificar
+```
+SELECT COUNT(*) FROM staging.sales_clean;
+```     0
+(1 row)
 ```
 
 
