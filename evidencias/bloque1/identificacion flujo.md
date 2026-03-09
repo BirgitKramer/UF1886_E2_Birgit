@@ -16,3 +16,4 @@
 - T3 (select valores)
   - Convertimos fecha en formato dd-MM-yyyy
   - Forzamos la presición númerica a 16,4 en campos monetarios
+
