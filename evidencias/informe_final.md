@@ -1,6 +1,6 @@
 # Informe Técnico Final – Proceso ETL Odoo 18 → Staging
 
-**Alumno:**        [Tu nombre]  
+**Alumno:**        Birgit KRA 
 **Fecha:**         04/03/2026
 **Entorno:**       Docker + PostgreSQL + Odoo 18 (datos demo) + Apache Hop GUI (Windows)  
 **Pipeline:**      `P01_load_sales.hpl`  
